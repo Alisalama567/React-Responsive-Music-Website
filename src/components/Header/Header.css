@@ -1,0 +1,92 @@
+.container{
+    padding: 3rem 4rem;
+    background-color: #081730;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.container .header >img{
+    width: 42px;
+    height: 42px;
+}
+.header .menus >ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu >ul>li{
+    cursor: pointer;
+}
+.menu >ul>li:hover{
+    color: brown;
+}
+
+.container .header .btns{
+   display: flex;
+   gap: 2rem;
+}
+.btns .btn{
+    background-color: transparent;
+    border: 1px solid #0f316d;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 89px;
+    cursor: pointer;
+}
+
+.btns .btn:hover {
+  background-color:#0f316d ;
+}
+.Bars{
+    /* display: none; */
+    font-size: 2rem;
+}
+@media screen and (max-width:768px){
+    .container{
+        padding: 1rem 2rem;
+    }
+ .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem !important;
+    font-size: 19px;
+    padding: 10px;
+    background-color: rgb(32, 35, 65);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 3rem;
+    z-index: 999;
+
+ }
+ 
+.menus >ul>li:hover{
+    color: brown;
+    
+}
+.container .header .btns{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    left: 8rem;
+    gap: 1rem;
+ }
+ .btns .btn{
+    width: 77px !important;
+    margin-left: 5px;
+ }
+ .Bars{
+    font-size: 38px;
+    position: absolute;
+    right: 44px;
+    cursor: pointer;
+    display: block;
+ }
+}

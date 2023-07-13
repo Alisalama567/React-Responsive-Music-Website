@@ -1,0 +1,78 @@
+.container1{
+    padding: 7rem 4rem;
+    background-color: black;
+    border-radius: 3rem;
+
+}
+.container1 .title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+    
+}
+.title>:nth-child(1){
+    width: 78px;
+    background: none;
+    padding: 10px;}
+.title>:nth-child(2){
+    font-size: 2rem;
+}
+.title>:nth-child(3){
+    font-size: 2rem;
+    font-weight: bold;
+}
+.music{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.music .mus1>img{
+    width: 39px;
+    background-color: #08173e;
+    padding: 10px 14px;
+    border-radius: 10px
+}
+.mus1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.music .mus1>:nth-child(2){
+    font-size: 1rem;
+    font-weight: 500;
+}
+.music .mus1>:nth-child(3){
+  font-size: 14px;
+  color: gray;
+}
+.music .mus1>:nth-child(4){
+ color: #ad0da2;
+}
+
+@media screen and (max-width:768px){
+    .container1 {
+        padding: 5rem 4rem;}
+    .container1 .title {
+        text-align: center;
+    }
+    .title>:nth-child(2) {
+        font-size: 0.7rem;
+    }
+    .music .mus1>:nth-child(3) {
+        font-size: 11px;
+        color: gray;
+    }
+    .music{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .h-right .image>:nth-child(3) {
+        width: 63px;}
+        .h-right .image>:nth-child(4) {
+            width: 73px;}
+}

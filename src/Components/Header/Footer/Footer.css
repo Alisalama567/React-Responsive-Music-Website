@@ -1,0 +1,60 @@
+.F-container{
+    padding: 3rem 4rem ;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+
+}
+.footer .menu >ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+
+.menu >ul>li{
+    cursor: pointer;
+}
+.menu >ul>li:hover{
+    color: brown;
+}
+.f-icon{
+    display: flex;
+    gap: 4rem;
+}
+.f-icon >a{
+    border: 1px solid whitesmoke;
+    border-radius: 49%;
+    padding: 8px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.f-icon >a>:hover{
+    background-color: aqua;
+}
+
+.f-text{
+    width: 58%;
+    font-size: 12px;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+
+@media screen and (max-width:768px){
+.F-container {
+    padding: 0rem 4rem;
+}
+.F-container .footer .menu{
+    display: none;
+}
+}

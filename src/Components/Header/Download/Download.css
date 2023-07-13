@@ -1,0 +1,53 @@
+.d-container{
+      padding: 7rem 4rem;
+      background-color: black;
+      border-radius: 50px;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.d-container .download >:nth-child(1){
+   width: 90px; 
+   margin-bottom: 20px;
+}
+.download >:nth-child(2){
+    font-size: 1.5rem;
+}
+.download >:nth-child(3){
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+.download >:nth-child(4){
+    width: 51%;
+    font-size: 13px;
+    color: gray;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.download .d-ima{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 0;
+}
+.download .d-ima >img{
+    border: 1px solid #564f4f;
+    border-radius: 10px;
+    width: 123px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .d-container {
+        padding: 4rem 4rem;}
+        .download >:nth-child(4) {
+            width: 67%;
+            font-size: 10px;}
+}

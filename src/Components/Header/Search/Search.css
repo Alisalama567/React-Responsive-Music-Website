@@ -1,0 +1,228 @@
+.s-container{
+    padding: 7rem 4rem;
+    background-color:  #081730;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search .s-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/* .s-left>img{
+    width: 70px;
+} */
+
+.s-left >:nth-child(1){
+    width: 17rem;
+    z-index: 999;
+    background: none;
+
+}
+.s-left >:nth-child(2){
+    width: 154px;
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    z-index: 999;
+    background: none;
+
+
+}
+.s-left >:nth-child(3){
+    top: 21%;
+    width: 135px;
+    position: absolute;
+    left: 11rem;
+    z-index: 999;
+    background: none;
+
+
+}
+.s-left >:nth-child(4){
+    width: 222px;
+    position: absolute;
+    bottom: 11%;
+    left: 3rem;
+    z-index: 999;
+    background: none;
+
+
+}
+.s-left >:nth-child(5){
+    position: absolute;
+    width: 69rem;
+    left: -61rem;
+    bottom: 22%;
+    background: none;
+
+}
+
+.s-right{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.search1{
+    display: flex;
+    gap: 1rem;
+    height: 30px;
+}
+.s-right .search1>:nth-child(1){
+    width: 27rem;
+    border-radius: 10px;
+    background-color: black;
+    color: gray;
+    border: none;
+    padding: 10px;
+    height: 19px;
+}
+
+.s-right .search1>:nth-child(2){
+    width: 23px;
+    background: #ff0090;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.s-right .text{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.s-right .text>:nth-child(1){
+width: 68px;
+margin-bottom: 15px;
+}
+.s-right .text>:nth-child(2){
+    font-size: 33px;
+}
+.s-right .text>:nth-child(3){
+    font-size: 35px;
+    font-weight: 600;
+}
+.s-right .text>:nth-child(4){
+    width: 15rem;
+    color: gray;
+    font-size: 12px
+}
+.musicc{
+    background-color: #0e203d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.musicc .m-text{
+    display: flex;
+    /* flex-direction: column; */
+    padding : 10px;
+    gap: 0.5rem
+
+}
+.t-image>img{
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.m-text >:nth-child(2){
+    display : flex;
+    flex-direction: column;
+    padding: 0px 10px;
+
+}
+.m-text1 >:nth-child(1){
+    font-weight: 500;
+    font-size: 19px;
+}
+.m-text1 >:nth-child(2){
+    font-size: 12px;
+    color: gray;
+}
+.m-control{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 12px 10px;
+}
+.m-control >:nth-child(1){
+    font-size: 15px;
+    color: #484848;
+}
+.m-control >:nth-child(3){
+    font-size: 15px;
+    color: #484848;
+}
+.m-control >:nth-child(2){
+    width: 15rem;
+}
+.m-control >:nth-child(6){
+    font-size: 15px;
+    fill: gray;
+    cursor: pointer;
+}
+.m-control >:nth-child(4){
+    font-size: 15px;
+    fill: gray;
+    cursor: pointer;
+}
+.m-control >:nth-child(5){
+    font-size: 30px;
+    fill: #f50bdd;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:768px){
+    .search {
+        flex-direction: column;
+        gap: 4em;}
+        .s-left >:nth-child(1) {
+            width: 13rem;}
+            .s-left >:nth-child(2) {
+                width: 104px;}
+
+                .s-left >:nth-child(3) {
+                    top: 22%;
+                    width: 90px;
+                    left: 5rem;
+                    position: absolute;         
+                    top: 22%;}
+                    .s-left >:nth-child(4) {
+                        width: 169px;}
+                        .s-left >:nth-child(5) {
+                            width: 70rem;}
+                            .s-right {
+                                text-align: center;
+                                gap: 3rem;
+                            }
+                            .s-right .text {
+                                align-items: center;
+                                gap: 1rem;
+                            }
+                            .s-right .text>:nth-child(2) {
+                                font-size: 23px;
+                            }
+                            .s-right .text>:nth-child(3) {
+                                font-size: 32px;
+                                font-weight: bold;
+                            }
+                            .s-right .text>:nth-child(4) {
+                                width: 20rem;
+                                color: gray;
+                                font-size: 13px;
+                            }
+                            .m-control >:nth-child(2) {
+                                width: 5rem;
+                            }
+                            .musicc{
+                                width: 18rem;
+                            }
+}
